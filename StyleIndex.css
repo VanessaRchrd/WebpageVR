@@ -1,0 +1,177 @@
+    /* Fun background gradient */
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Delius, cursive;
+        background-image: url('Images/background.jpg');
+        color: #333;
+    }
+
+    /* Style for the navigation bar */
+    nav {
+        background-color: #dcc1e4;
+        padding: 11px 7px;
+        /* Padding inside the nav */
+        border-radius: 20px;
+        /* Rounded corners */
+        display: flex;
+        /* Use flexbox to arrange the items */
+        justify-content: center;
+        /* Center the links */
+        margin: 9px;
+        /* Add some space around the nav */
+    }
+
+    nav a {
+        text-decoration: none;
+        /* Remove underlines */
+        color: #010000;
+        /* White text */
+        margin: 0 78px;
+        /* Space between links */
+        font-family: Boogaloo, cursive;
+        /* Custom font */
+        font-weight: 600;
+        /* Font weight */
+        font-size: 1.5rem;
+        transition: color 0.9s ease, transform 0.9s ease;
+        /* Smooth transitions */
+    }
+
+    nav a:hover {
+        color: #1b00d2;
+        /* Change color on hover */
+        transform: scale(1.1);
+        /* Slight zoom effect on hover */
+    }
+
+    /* Styling the header */
+    header {
+        text-align: center;
+        padding: 30px 20px;
+        color: #fff;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    header h1 {
+        font-size: 3.5rem;
+        font-family: 'Boogaloo', cursive;
+        color: black
+    }
+
+    /* Section style */
+    section {
+        text-align: center;
+        margin: 29px auto;
+        padding: 20px;
+        max-width: 727px;
+        background: rgba(255, 255, 255, 0.8);
+        border-radius: 32px;
+        box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    section h3 {
+        font-size: 1.8rem;
+        color: #ff4da6;
+        margin-bottom: 10px;
+    }
+
+    section p {
+        font-size: 1.1rem;
+        line-height: 1.6;
+    }
+
+    /* Animation */
+    h3,
+    p {
+        animation: fadeIn 1s ease;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /* Centered navigation bar */
+    nav {
+        background-color: #dcc1e4;
+        /* Background color */
+        padding: 10px 7px;
+        /* Padding inside the nav */
+        border-radius: 20px;
+        /* Rounded corners */
+        display: flex;
+        /* Use flexbox to arrange the items */
+        justify-content: center;
+        /* Center the links horizontally */
+        margin: 11px auto;
+        /* Center the nav on the page with auto margins */
+        max-width: 852px;
+        /* Limit the width to keep it centered and neat */
+        box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.2);
+        /* Optional shadow for aesthetics */
+    }
+
+    /* Fun and animated h1 */
+    h1 {
+        font-size: 3.5rem;
+        font-family: 'Boogaloo', cursive;
+        color: black;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        animation: forwards 10s steps(30, end), bounce 1s infinite;
+        /* Combine typing and bouncing animations */
+        display: inline-block;
+        /* Make h1 an inline block to prevent flexbox conflicts */
+        text-align: center;
+        /* Center text inside */
+    }
+
+    /* Typing animation effect */
+    @keyframes forwards {
+        from {
+            width: 0;
+            /* Start with no text */
+        }
+
+        to {
+            width: 100%;
+            /* Reveal the full text */
+        }
+    }
+
+    /* Bouncing animation */
+    @keyframes bounce {
+
+        0%,
+        100% {
+            transform: translateY(0);
+            /* Normal position */
+        }
+
+        50% {
+            transform: translateY(-10px);
+            /* Bounce up */
+        }
+    }
+
+    /* Hover effect: Color change and increase size */
+    h1:hover {
+        color: #ff4da6;
+        /* Change text color */
+        transform: scale(1.1);
+        /* Slightly increase the size */
+        transition: all 0.3s ease;
+        /* Smooth transition */
+    }
+
+    footer {
+        text-align-last: center;
+        margin-bottom: auto;
+    }

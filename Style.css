@@ -1,0 +1,250 @@
+body {
+  font-family: Boogaloo, Delius;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+ background-image: url('Images/background.jpg');
+ background-size:cover;
+    color: #333;
+    
+}
+
+    table {
+        width: 100%; /* Adjust the width of the table */
+        margin: 8px auto; /* Center the table */
+        border-collapse: collapse; /* Remove double borders */
+        box-shadow: 0 7px 7px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+        font-family: 'Boogaloo', cursive; /* Fun font */
+        background-color: #ffe0fc; /* Light background color */
+    }
+
+    th, td {
+        padding: 15px; /* Add padding for spacing */
+        text-align: center; /* Center align text */
+        border: 1px solid #ddd; /* Border for cells */
+    }
+
+    th {
+        background-color: #dd9aff; /* Highlight header row */
+        color: #000; /* Text color for headers */
+        font-size: 1.6em; /* Slightly larger font for headers */
+    }
+
+    td {
+        font-size: 1em; /* Font size for table cells */
+        color: #333; /* Dark text */
+    }
+
+    tr:nth-child(even) {
+        background-color: #f9f9f9; /* Alternate row colors */
+    }
+
+    tr:hover {
+        background-color: #c0baeb; /* Highlight row on hover */
+        transform: scale(1.02); /* Slight zoom effect */
+        transition: 0.3s ease-in-out; /* Smooth transition */
+    }
+
+    caption {
+        font-size: 1.5em; /* Larger font for caption */
+        margin-bottom: 10px;
+        color: #000000; /* Bright color for fun */
+        font-family: Delius, cursive;
+    }
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+form label, form input, form textarea {
+  margin-bottom: 2px;
+}
+
+.image-container {
+    text-align: center;
+}
+
+/* Use Boogaloo for headings */
+h1, h2 {
+    font-family: 'Boogaloo', cursive;
+}
+
+/* Use Fira Sans for body text and other elements */
+body, p, a, ul, li {
+    font-family: 'Delius', cursive;
+}
+    /* Font sizes for headings */
+    h1 {
+        font-size: 2.5em; /* Adjust font size for h1 */
+        font-family: 'Boogaloo', cursive; /* Fun font */
+        text-align: center; /* Center align */
+    }
+
+    h2 {
+        font-size: 2em; /* Adjust font size for h2 */
+        font-family: 'Boogaloo', cursive; /* Complementary font */
+    }
+
+    h3 {
+        font-size: 1.75em; /* Adjust font size for h3 */
+        font-family: 'Delius', cursive;;
+    }
+
+    h4 {
+        font-size: 1.5em; /* Adjust font size for h4 */
+        font-family: 'Delius', cursive;
+    }
+
+     /* Style for the navigation bar */
+        nav {
+            background-color: #dcc1e4; 
+            padding: 11px 7px; /* Padding inside the nav */
+            border-radius: 20px; /* Rounded corners */
+            display: flex; /* Use flexbox to arrange the items */
+            justify-content: center; /* Center the links */
+            margin: 9px; /* Add some space around the nav */
+        }
+
+        nav a {
+            text-decoration: none; /* Remove underlines */
+            color: #010000; /* White text */
+            margin: 0 78px; /* Space between links */
+            font-family: Boogaloo, cursive; /* Custom font */
+            font-weight: 600; /* Font weight */
+            font-size: 1.5rem;
+            transition: color 0.9s ease, transform 0.9s ease; /* Smooth transitions */
+        }
+
+        nav a:hover {
+            color: #1b00d2; /* Change color on hover */
+            transform: scale(1.1); /* Slight zoom effect on hover */
+        }
+
+    /* Styling the header */
+    header {
+      text-align: center;
+      padding: 30px 20px;
+      color: #fff;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    header h1 {
+      font-size: 3.5rem;
+      font-family: 'Boogaloo', cursive;
+        color: black
+    }
+
+    /* Section style */
+    section {
+      text-align: center;
+      margin: 29px auto;
+      padding: 20px;
+      max-width: 727px;
+      background: rgba(255, 255, 255, 0.8);
+      border-radius: 32px;
+      box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    section h3 {
+      font-size: 1.8rem;
+      color: #ff4da6;
+      margin-bottom: 10px;
+    }
+
+    section p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    /* Animation */
+    h3, p {
+      animation: fadeIn 1s ease;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+/* Centered navigation bar */
+nav {
+    background-color: #dcc1e4; /* Background color */
+    padding: 10px 7px; /* Padding inside the nav */
+    border-radius: 20px; /* Rounded corners */
+    display: flex; /* Use flexbox to arrange the items */
+    justify-content: center; /* Center the links horizontally */
+    margin: 11px auto; /* Center the nav on the page with auto margins */
+    max-width: 852px; /* Limit the width to keep it centered and neat */
+    box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for aesthetics */
+}
+
+
+    /* Style for the project gallery */
+    .project-gallery {
+        display: flex; /* Arrange images in a row */
+        gap: 15px; /* Add space between images */
+        margin-top: 10px;
+        flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    }
+
+    .project-gallery img {
+        width: 150px; /* Set a fixed width for the images */
+        height: auto; /* Maintain aspect ratio */
+        border-radius: 10px; /* Rounded corners for images */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+        transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+    }
+
+    .project-gallery img:hover {
+        transform: scale(1.1); /* Slight zoom on hover */
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+    }
+button:hover {
+    background-color: #ff1a75;
+}
+
+/* Fun and animated h1 */
+h1 {
+    font-size: 3.5rem;
+    font-family: 'Boogaloo', cursive;
+    color: black;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    animation:forwards 10s steps(30, end), bounce 1s infinite; /* Combine typing and bouncing animations */
+    display: inline-block; /* Make h1 an inline block to prevent flexbox conflicts */
+   text-align: center; /* Center text inside */
+}
+
+/* Typing animation effect */
+@keyframes forwards {
+    from {
+        width: 0; /* Start with no text */
+    }
+    to {
+        width: 100%; /* Reveal the full text */
+    }
+}
+
+/* Bouncing animation */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0); /* Normal position */
+    }
+    50% {
+        transform: translateY(-10px); /* Bounce up */
+    }
+}
+
+/* Hover effect: Color change and increase size */
+h1:hover {
+    color: #ff4da6; /* Change text color */
+    transform: scale(1.1); /* Slightly increase the size */
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+
+
